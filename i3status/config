@@ -1,0 +1,48 @@
+general {
+    interval = 5
+    colors = true
+    color_good = "#ffffff"
+    color_degraded = "#cccccc"
+    color_bad = "#cccccc"
+}
+
+order += "cpu_usage"
+order += "memory"
+order += "disk /"
+order += "battery 0"
+order += "wireless wlan0"
+order += "ethernet eth0"
+order += "time"
+
+cpu_usage {
+    format = "CPU %usage"
+}
+
+memory {
+    format = "RAM %used/%total"
+}
+
+#disk "/" {
+#    format = "DISK %avail"
+#}
+
+#battery 0 {
+#    format = "BAT %status %percentage"
+#}
+
+#wireless wlan0 {
+#    format_up = "WiFi: %essid (%quality)"
+#    format_down = "WiFi: down"
+#}
+
+#ethernet eth0 {
+#    format_up = "LAN: %ip"
+#    format_down = "LAN: down"
+#}
+
+## %Y
+time {
+    format = "%m/%d %H:%M:%S"
+}
+
+
