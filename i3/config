@@ -12,6 +12,11 @@
 
 ## rofi 2
 bindsym $mod+F4 exec rofi -show menu -modi "menu:rofi-power-menu"
+## xrandr
+exec --no-startup-id xrandr --output eDP-1 --set 'scaling mode' 'Full'
+## xset
+bindsym $mod+F12 exec xset dpms force off
+bindsym $mod+F3 exec --no-startup-id xset led 3 
 ## GSR
 #exec --no-startup-id flatpak run com.dec05eba.gpu_screen_recorder
 ## abrir IDE

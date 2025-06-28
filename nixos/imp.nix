@@ -9,7 +9,7 @@
     ./conf/flakes/flakes.nix ## Ativação do flakes
     ./conf/Environments/Aliases.nix
     ./conf/Environments/VA.nix
-    ./conf/pkgs/Lix.nix
+#    ./conf/pkgs/Lix.nix
     ./conf/fltpk/Flatpak.nix
     ./conf/pkgs/Polkit.nix
     ./conf/pkgs/Steam.nix
