@@ -1,8 +1,8 @@
 # Meus dotfiles do meu atual sistema.
 
 ### WM atual:
-***- i3WM***
+***- Hyprland***
 ### Compositor:
-***- Compton***
+***- UWSM***
 
 (Não sei oque adicionar aqui além disso)
