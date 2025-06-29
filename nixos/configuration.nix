@@ -50,7 +50,7 @@
   };
 
   # Enable the X11 windowing system.
-  services.xserver.enable = true;
+#  services.xserver.enable = true;
 
   # WM
   services.xserver.windowManager.i3.enable = true;
@@ -59,7 +59,9 @@
   services.xserver.desktopManager.xfce.enable = true;
 
   ## DM
-  services.xserver.displayManager.lightdm.enable = true;
+#  services.xserver.displayManager.lightdm.enable = true;
+   services.displayManager.sddm.enable = true;
+   services.displayManager.sddm.wayland.enable = true; 
 
   # Configure keymap in X11
   services.xserver.xkb = {

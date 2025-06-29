@@ -2,7 +2,7 @@
  programs.git = {
     enable = true;
     userName = "HavanaHL";
-    userEmail = "deivepython@protonmail.com";
+    userEmail = "X";
     extraConfig.credential.helper = "store";
   };
 }

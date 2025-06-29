@@ -1,6 +1,9 @@
 {config, ...}: {  
   environment.sessionVariables = {
 
+
+    ## Wayland
+    NIXOS_OZONE_WL = "1";
     ## QT
     QT_QPA_PLATFORMTHEME = "qt6ct";
    # QT_STYLE_OVERRIDE = "gtk2";

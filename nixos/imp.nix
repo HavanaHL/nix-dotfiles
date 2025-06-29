@@ -14,6 +14,7 @@
     ./conf/pkgs/Polkit.nix
     ./conf/pkgs/Steam.nix
     ./conf/zsh/zsh.nix
+    ./conf/hypr/hypr.nix
     #./conf/tmp/
   ];
 }
