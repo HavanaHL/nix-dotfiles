@@ -37,5 +37,7 @@
   qt6ct
   xdg-user-dirs
   mate.engrampa
+  xfce.thunar
+
  ];
 }

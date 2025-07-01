@@ -5,6 +5,6 @@
     xwayland.enable = true; 
   };
 
-environment.systemPackages = with pkgs; [ waybar waypaper hyprpaper swaybg slurp grim wl-clipboard ];
+environment.systemPackages = with pkgs; [ waybar waypaper hyprpaper swaybg slurp grim wl-clipboard swappy swayidle ];
 
 }

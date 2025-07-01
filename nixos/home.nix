@@ -21,7 +21,7 @@
     pkgs.tty-clock
     pkgs.plank
     pkgs.polybar
-    pkgs.picom
+#   pkgs.picom
     pkgs.kdePackages.breeze
 
     ## Jogos y games
@@ -43,7 +43,6 @@
 
     ## Acessorios
     pkgs.fastfetch
-    pkgs.mate.mate-tweak
     pkgs.xfce.ristretto
     pkgs.bc
     pkgs.kdePackages.kdialog
@@ -55,26 +54,16 @@
     pkgs.zenity
     pkgs.kitty
     pkgs.pnmixer
+    pkgs.alacritty
 
     # IDE
     pkgs.vscodium
-    #pkgs.neovim	
-    pkgs.zed-editor-fhs
     pkgs.nixd
 
-    ## multimídia
+    ## Multimídia
     pkgs.gpu-screen-recorder-gtk
     pkgs.youtube-music
-    pkgs.audacious
-    pkgs.audacious-plugins
     pkgs.strawberry
-
-    ## Xfce
-    pkgs.xfce.xfce4-dockbarx-plugin
-    pkgs.xfce.tumbler   
-    pkgs.xfce.xfce4-docklike-plugin
-    pkgs.xfce.xfce4-cpugraph-plugin
-    pkgs.xfce.xfce4-whiskermenu-plugin
 
     ## Sys
     pkgs.intel-vaapi-driver

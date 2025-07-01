@@ -13,10 +13,9 @@
     "cpu",
     "memory",
     "pulseaudio",
-    "tray",
+    "group/info",
     "clock#simpleclock",
     "custom/notification",
-    "group/info",
   ],
   "custom/spotify": {
     "format": "  {}",
@@ -86,6 +85,8 @@
     "modules": [
       "custom/arrow-right",
       "clock",
+      "tray",
+      "battery"
     ]
   },
     "custom/arrow-left":  { "format": ">", "tooltip": false },
@@ -106,9 +107,18 @@
   },
   "custom/power": {
     "tooltip": false,
-    "on-click": "wlogout -p layer-shell &",
+    "on-click": "rofi -show menu -modi menu:rofi-power-menu ",
     "format": "⏻",
   },
+  
+    "battery": {
+    "interval": 1,
+    "states": {
+      "good": 95,
+      "warning": 30,
+      "critical": 20
+    },
+  
   "custom/notification": {
     "escape": true,
     "exec": "swaync-client -swb",
@@ -122,4 +132,7 @@
     "return-type": "json",
     "tooltip": false,
   },
+
+}
+
 }

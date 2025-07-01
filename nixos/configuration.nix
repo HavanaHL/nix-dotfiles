@@ -17,9 +17,8 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_latest; # Kernel mainline padrão.
-  #boot.kernelPackages = pkgs.linuxKernel.packages.linux_xanmod_latest; # Kernel low-latency
-
+  boot.kernelPackages = pkgs.linuxPackages_cachyos; # Kernel Cachy
+  #boot.kernelPackages = pkgs.linuxPackages_latest; # Kernel mainline padrão.
 
   networking.hostName = "Genesis"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
@@ -50,18 +49,15 @@
   };
 
   # Enable the X11 windowing system.
-#  services.xserver.enable = true;
+  services.xserver = {
+    enable = true;
+    displayManager = {
+    lightdm.enable = false;
+    };
+  };
 
   # WM
-  services.xserver.windowManager.i3.enable = true;
-
-  # DE
-  services.xserver.desktopManager.xfce.enable = true;
-
-  ## DM
-#  services.xserver.displayManager.lightdm.enable = true;
-   services.displayManager.sddm.enable = true;
-   services.displayManager.sddm.wayland.enable = true; 
+ #services.xserver.windowManager.i3.enable = true;
 
   # Configure keymap in X11
   services.xserver.xkb = {
