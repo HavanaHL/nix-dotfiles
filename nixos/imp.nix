@@ -15,6 +15,7 @@
     ./conf/pkgs/Steam.nix
     ./conf/zsh/zsh.nix
     ./conf/hypr/hypr.nix
+    ./conf/Environments/dft.nix
     #./conf/tmp/
   ];
 }

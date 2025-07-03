@@ -2,7 +2,7 @@
   min-height: 0;
   min-width: 0;
   font-family: Lexend, "JetBrainsMono NFP";
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -113,15 +113,21 @@ window#waybar.empty #window {
 
 #battery.charging {
     color: #ffffff;
-    background-color: #26A65B;
+
 }
 
 #battery.warning:not(.charging) {
+  padding: 0.2rem 0.3rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10px;
     background-color: #ffbe61;
     color: black;
 }
 
 #battery.critical:not(.charging) {
+  padding: 0.2rem 0.3rem;
+  margin: 0.2rem 0.15rem;
+  border-radius: 10px;
     background-color: #f53c3c;
     color: #ffffff;
     animation-name: blink;

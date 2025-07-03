@@ -1,13 +1,13 @@
 {
   "layer": "bottom",
   "position": "top",
-  "height": 35,
+  "height": 39,
   "spacing": 2,
   "exclusive": true,
-  "gtk-layer-shell": true,
+  "gtk-layer-shell": false,
   "passthrough": false,
   "fixed-center": true,
-  "modules-left": ["custom/power"],
+  "modules-left": ["mpris"],
   "modules-center": ["hyprland/workspaces"],
   "modules-right": [
     "cpu",
@@ -17,25 +17,19 @@
     "clock#simpleclock",
     "custom/notification",
   ],
-  "custom/spotify": {
+  "custom/ytm": {
     "format": "  {}",
     "return-type": "json",
-    "on-click": "playerctl -p spotify play-pause",
-    "on-click-right": "spotifatius toggle-liked",
-    "on-click-middle": "playerctl -p spotify next",
-    "exec": "spotifatius monitor",
+    "on-click": "playerctl -p YoutubeMusic play-pause",
+    "on-click-right": "YoutubeMusic",
+    "on-click-middle": "playerctl -p YoutubeMusic next",
+    "exec": "YoutubeMusic",
   },
   "mpris": {
-    "player": "spotify",
-    "dynamic-order": ["artist", "title"],
+    "player": "YoutubeMusic",
+    "dynamic-order": ["artist"],
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
-    "status-icons": {
-      "paused": "",
-    },
-    "player-icons": {
-      "default": "",
-    },
   },
   "hyprland/workspaces": {
     "on-click": "activate",
@@ -84,9 +78,8 @@
     "drawer": { "transition-duration": 300, "transition-left-to-right": true },
     "modules": [
       "custom/arrow-right",
-      "clock",
       "tray",
-      "battery"
+      "battery",
     ]
   },
     "custom/arrow-left":  { "format": ">", "tooltip": false },
@@ -100,6 +93,7 @@
       "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
+    "on-click-right": "playerctl play-pause",
   },
   "custom/sep": {
     "format": "|",
@@ -108,7 +102,7 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "rofi -show menu -modi menu:rofi-power-menu ",
-    "format": "⏻",
+    "format": " ",
   },
   
     "battery": {
@@ -117,8 +111,9 @@
       "good": 95,
       "warning": 30,
       "critical": 20
+      
     },
-  
+    
   "custom/notification": {
     "escape": true,
     "exec": "swaync-client -swb",
