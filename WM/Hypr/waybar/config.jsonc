@@ -27,9 +27,10 @@
   },
   "mpris": {
     "player": "YoutubeMusic",
-    "dynamic-order": ["artist"],
+    "dynamic-order": ["artist", "title"],
     "format": "{player_icon} {dynamic}",
     "format-paused": "{status_icon} <i>{dynamic}</i>",
+    "max-length": 45
   },
   "hyprland/workspaces": {
     "on-click": "activate",
