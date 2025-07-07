@@ -4,11 +4,17 @@
 ***- Hyprland***
 ### Pacotes em relação ao WM:
 ***- Grim ***
+
 ***- Slurp***
+
 ***- Satty***
+
 ***- Gnome Polkit***
+
 ***- Thunar***
+
 ***- Rofi***
+
 ***- Waybar***
 
 
