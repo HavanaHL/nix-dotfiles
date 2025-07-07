@@ -17,10 +17,10 @@
   boot.loader.efi.canTouchEfiVariables = true;
 
   # Use latest kernel.
-  boot.kernelPackages = pkgs.linuxPackages_cachyos; # Kernel Cachy
-  #boot.kernelPackages = pkgs.linuxPackages_latest; # Kernel mainline padrão.
+#  boot.kernelPackages = pkgs.linuxPackages_cachyos; # Kernel Cachy
+   boot.kernelPackages = pkgs.linuxPackages_latest; # Kernel mainline padrão.
 
-  networking.hostName = "Genesis"; # Define your hostname.
+  networking.hostName = "Exodus"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Configure network proxy if necessary
@@ -70,9 +70,6 @@
 
   # Configure console keymap
   console.keyMap = "br-abnt2";
-
-  # Enable CUPS to print documents.
-  services.printing.enable = true;
 
   # Enable sound with pipewire.
   services.pulseaudio.enable = false;

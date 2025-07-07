@@ -1,18 +1,19 @@
 {pkgs, ...}: {
  environment.systemPackages = with pkgs; [
-    
+
   ## Multimedia
   vlc
   mpv
   yt-dlp
   ffmpeg
+  satty
+
 
   ## Jogos y games
   steam
-    
+
   ## Sys
   wget
-  gvfs
   ntfs3g
   exfat
   fuse
@@ -38,6 +39,6 @@
   xdg-user-dirs
   mate.engrampa
   xfce.thunar
-
+  
  ];
 }

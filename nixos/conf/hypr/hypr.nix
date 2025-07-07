@@ -1,7 +1,7 @@
 {config, pkgs, ...}: {
   programs.hyprland = {
     enable = true;
-    withUWSM = true; # Recomendação da wiki :P
+#    withUWSM = true; # Recomendação da wiki :P
     xwayland.enable = true; 
   };
 
