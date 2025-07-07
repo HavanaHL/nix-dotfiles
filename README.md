@@ -1,21 +1,29 @@
-# Meus dotfiles do meu atual sistema.
+## ***Meu atual sistema.***
 
-### WM atual:
-***- Hyprland***
-### Pacotes em relação ao WM:
-***- Grim***
+Interface:
+----
+**WM atual:**
 
-***- Slurp***
+*- Hyprland*
 
-***- Satty***
+**Pacotes em relação ao WM:**
 
-***- Gnome Polkit***
-
-***- Thunar***
-
-***- Rofi***
-
-***- Waybar***
+*-  Grim, Slurp, Satty, Gnome Polkit, Thunar, Rofi, Waybar.*
 
 
-(Não sei oque adicionar aqui além disso)
+**DisplayManager.enable =**
+
+*false;*
+
+NixOS:
+----
+
+*- Lix = true;*
+
+*- Flakes & Home-manager = true;*
+
+*- Chaotic-Nyx = true;*
+
+*- CachyOS Kernel = true;*
+
+----
