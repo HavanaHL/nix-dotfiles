@@ -3,7 +3,7 @@
 ### WM atual:
 ***- Hyprland***
 ### Pacotes em relação ao WM:
-***- Grim ***
+***- Grim***
 
 ***- Slurp***
 
