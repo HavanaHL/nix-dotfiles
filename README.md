@@ -2,7 +2,14 @@
 
 ### WM atual:
 ***- Hyprland***
-### Compositor:
-***- UWSM***
+### Pacotes em relação ao WM:
+***- Grim ***
+***- Slurp***
+***- Satty***
+***- Gnome Polkit***
+***- Thunar***
+***- Rofi***
+***- Waybar***
+
 
 (Não sei oque adicionar aqui além disso)
